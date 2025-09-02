@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:test:e2e-headed": "npx cypress run --headed"
+    "cy:test:e2e-headed": "npx cypress run --headed",
+    "cy:test:e2e": "npx cypress run",
+    "cy:test:e2e-chrome": "npx cypress run --browser chrome",
+    "cy:test:e2e-firefox": "npx cypress run --browser firefox",
+    "cy:open": "npx cypress open",
+    "cy:verify": "npx cypress verify",
+    "cy:info": "npx cypress info",
+    "test": "npm run cy:test:e2e",
+    "test:ci": "npm run cy:test:e2e-chrome"
   },
   "keywords": [],
   "author": "",
