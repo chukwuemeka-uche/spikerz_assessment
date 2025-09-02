@@ -17,7 +17,7 @@
 import './commands'
 
 Cypress.on('uncaught:exception', (err, runnable) => {
-  // returning false here prevents Cypress from
-  // failing the test
+  // returning false here prevents Cypress from failing the test
+  console.error("Cypress caught an error:", err.message);
   return false
 })

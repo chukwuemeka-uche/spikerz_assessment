@@ -58,3 +58,6 @@ npm run cy:test:e2e-headed
 
 - Forced redirect from the YouTube page using a fakke return URL because Google authentication kept blocking access to the site causing a 403
 - Bonus conditions for use of Typescript stated in the task were addressed
+- Included yml file for integration with GitHub actions
+- Included retries in cypress.config.ts
+- Updated Global error handler in e2e.ts
